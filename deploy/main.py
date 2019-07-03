@@ -7,7 +7,6 @@ import yaml
 
 from google.auth import compute_engine
 import googleapiclient.discovery
-
 # Create Cloud Build client with default credentials, credentials can be sourced in
 # this way because Cloud Functions runs on Compute Engine.
 credentials = compute_engine.Credentials()
@@ -20,7 +19,7 @@ with open("deploy.yaml", "r") as f:
     base_deploy_request = yaml.load(f)
 base_deploy_request["source"] = {
     "storageSource": {
-        "bucket": "dl-platform-temp",
+        "bucket": "nad-svcplan-lab-dl-platform-temp",
         "object": "notebook-ci-showcase/live.tar.gz",
     }
 }
