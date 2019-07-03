@@ -20,4 +20,4 @@ GCS_LOCATION="gs://dl-platform-temp/notebook-ci-showcase"
 # API_KEY=`echo "${API_KEY}"`
 
 # execute_notebook will return 0 or 1 depends on the status of the notebook.
-execute_notebook -i "./${INPUT_NOTEBOOK}" -o "${GCS_LOCATION}" -m "api_key=${API_KEY}" -g t4 -c 1
+# execute_notebook -i "./${INPUT_NOTEBOOK}" -o "${GCS_LOCATION}" -m "api_key=${API_KEY}" -g t4 -c 1
