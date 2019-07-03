@@ -43,7 +43,7 @@ function output_for_mode() {
 
 INPUT_NOTEBOOK="demo.ipynb"
 NOTEBOOK_NAME=$(basename ${INPUT_NOTEBOOK})
-GCS_LOCATION="gs://dl-platform-temp/notebook-ci-showcase"
+GCS_LOCATION="gs://nad-svcplan-lab-dl-platform-temp/notebook-ci-showcase"
 INPUT_NOTEBOOK_GCS_PATH="${GCS_LOCATION}/staging/${BUILD_TIME}/${NOTEBOOK_NAME}"
 PARAM_METADATA=""
 if [[ ! -z ${PARAM_FILE} ]]; then
