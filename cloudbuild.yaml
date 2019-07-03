@@ -56,7 +56,7 @@ steps:
   args: ['gcloud', 'functions', 'deploy', 'demo-notebook-function', '--trigger-topic=demo-notebook', '--region=us-central1', '--source=gs://dl-platform-temp/notebook-ci-showcase/deploy.zip']
 # ↑↑↑↑↑↑↑ End of Continues Delivery Part ↑↑↑↑↑↑↑↑↑↑↑↑↑##################
 ######### This part will generate actual artifact  #####################
-secrets:
-- kmsKeyName: projects/deeplearning-platform/locations/global/keyRings/api_key/cryptoKeys/google_maps_api
-  secretEnv:
-    API_KEY: CiQAqOZsWlDTXTRk/yjMO1BmEwto8Kboq90JG9zOuhizXsVO6fQSUQD7A7YryCuYQ+t6h9IL9Of6M+qCg/SezgvB/efTAGHhfzOYqa9mNMlECMo5hgnzpNjq6pPCauASAy8+VB+H4SLOfT9drLlpQTgxW3zTpAxtTQ==
+# secrets:
+# - kmsKeyName: projects/deeplearning-platform/locations/global/keyRings/api_key/cryptoKeys/google_maps_api
+#  secretEnv:
+#    API_KEY: CiQAqOZsWlDTXTRk/yjMO1BmEwto8Kboq90JG9zOuhizXsVO6fQSUQD7A7YryCuYQ+t6h9IL9Of6M+qCg/SezgvB/efTAGHhfzOYqa9mNMlECMo5hgnzpNjq6pPCauASAy8+VB+H4SLOfT9drLlpQTgxW3zTpAxtTQ==
