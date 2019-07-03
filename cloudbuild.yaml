@@ -24,7 +24,7 @@ steps:
   # Secret is needed since we are using Google Map API Key in the Notebook. Notebook just reads the key from the env variables.
   # You can read more about Cloud Build Secrets here:
   # https://cloud.google.com/cloud-build/docs/securing-builds/use-encrypted-secrets-credentials
-  secretEnv: ['API_KEY'] 
+  # secretEnv: ['API_KEY'] - Commenting out map API key functionality. 
 # ↑↑↑↑↑↑↑ End of Continuous Integration Part ↑↑↑↑↑↑↑↑↑↑↑↑↑###############
 ######### Execution will not process further if notebook is broken #####
 # ↓↓↓↓↓↓↓ Start of Continuous Delivery Part ↓↓↓↓↓↓↓↓↓↓↓↓ ################
